@@ -1,0 +1,11 @@
+{
+    // use the Python version from the virtual environment: change "D:/MyVenv/venv312/Scripts/" to your virtual environment path
+    "python.defaultInterpreterPath": "E:/VenvManagement/py312_ZebraThunderbird/Scripts/",  
+
+    // use the system's default Python version
+    //"python.defaultInterpreterPath": "python"
+
+    "python.analysis.extraPaths": [
+        "./resource"
+    ]
+}

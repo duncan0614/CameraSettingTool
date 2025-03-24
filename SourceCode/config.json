@@ -1,0 +1,18 @@
+[{
+    "Type":"Official",
+    "key-name":"ggr-api-key",
+    "key-value":"455a7ffb-49a3-402d-a82c-6367e82dfc53",
+    "url": "https://edi-local.gogoro.com/api/t-conn/v1/critical-parts/bridge",
+    "company": "GTW",
+    "tableUpdate": "1",
+    "delaytime": "1"
+},
+{
+    "Type":"Test",
+    "key-name":"ggr-api-key",
+    "key-value":"eac96131-2b0b-4371-8877-fd6f3324910f",
+    "url": "https://edi-local-pa.gogoro.com/api/t-conn/v1/critical-parts/bridge",
+    "company": "GTW",
+    "tableUpdate": "1",
+    "delaytime": "1"
+}]

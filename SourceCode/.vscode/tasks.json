@@ -1,0 +1,71 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build exe",
+            "type": "process",
+            "command": "${config:python.defaultInterpreterPath}pyinstaller.exe",
+            "args": [
+                // "--hidden-import",
+                // "pywintypes",
+                // "--add-binary",
+                // "*.dll;.",
+                "-F",
+                "Program.py",
+                "-n",
+                "CameraSettingTool",
+                "--clean",
+                "--noconsole",
+                // "--key",
+                // "SINBON EMS"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "Clean exe",
+            "type": "shell",
+            "command": "rmdir log dist build EDIData",
+            "args": [
+                "/s/q"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Clean cache",
+            "type": "process",
+            "command": "python",
+            "args": [
+                "-Bc",
+                "import pathlib; [p.rmdir() for p in pathlib.Path('.').rglob('__pycache__')]"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run program",
+            "type": "process",
+            "command": "${config:python.defaultInterpreterPath}python.exe",
+            "args": [
+                "Program.py"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
