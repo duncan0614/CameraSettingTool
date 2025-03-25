@@ -21,7 +21,6 @@ This repository contains scripts and project files for a Camera Setting Tool wri
    ```bash
    git clone https://github.com/duncan0614/CameraSettingTool.git
 2. **Open the solution (CameraSettingTool.sln) in Visual Studio or your preferred C# IDE**.
-   - If using Unity, copy the Script/CameraSetting.cs file into your Unity Assets/Scripts folder.
 3. **Restore/resolve any missing packages if prompted by your IDE**.
 
 ---
