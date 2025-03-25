@@ -1,4 +1,4 @@
-Copyright (c) [2025] [PinBai Lin]
+Copyright (c) [2025] [@duncan0614]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Camera Setting Tool"), to deal
